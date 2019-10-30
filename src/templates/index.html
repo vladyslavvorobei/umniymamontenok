@@ -1,0 +1,18 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+  <div class="first-screen__wrapper">
+    {% include "components/_header.html" %}
+    {% include "components/_first-screen.html" %}
+  </div>
+  <main>
+    {% include "components/_information.html" %}
+    {% include "components/_subject.html" %}
+    {% include "components/_form.html" %}
+  </main>
+  {% include "components/_footer.html" %}
+
+{% endblock %}
